@@ -1,6 +1,6 @@
 <?php
 session_start();
-$link = mysql_connect('localhost', 'grimhqco_slapweb', 'cowcow1');
+$link = mysql_connect('localhost', 'user', 'pass');
 mysql_select_db('grimhqco_slapdashwebdeisgn', $link);
 $timestamp1 = strtotime($item['commissiondate']);
 print'<?xml version="1.0" encoding="utf-8"?>

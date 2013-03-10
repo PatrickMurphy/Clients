@@ -15,7 +15,7 @@ if ($_GET['act'] == "logout") {
     header('location: index.php?msgtype=success&msg=You%20have%20been%20Logged%20Out.');
 }
 if (isset($_POST['login'])) {
-    $link = mysql_connect('localhost', 'grimhqco_slapweb', 'cowcow1') or die(mysql_error());
+    $link = mysql_connect('localhost', 'grimhqco_user', 'password') or die(mysql_error());
     mysql_select_db('grimhqco_slapdashwebdeisgn', $link) or die(mysql_error());
     $query[1] = "SELECT * FROM clients WHERE clientid = '" . $_POST['username'] .
         "' LIMIT 1";

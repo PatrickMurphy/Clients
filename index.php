@@ -1,6 +1,6 @@
 <?
 session_start();
-$link = mysql_connect('localhost', 'grimhqco_slapweb', 'cowcow1');
+$link = mysql_connect('localhost', 'grimhqco_user', 'password');
 mysql_select_db('grimhqco_slapdashwebdeisgn', $link);
 function pageswitch($value){
 switch ($value) {
